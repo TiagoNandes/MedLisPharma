@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.example.medlispharma">
-
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CONTROL_KEYGUARD"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.NFC" />
+    <uses-feature android:name="android.hardware.nfc" /> <!-- android:required="true" -->
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,11 +16,42 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MedLisPharma">
-        <activity android:name=".Menu"></activity>
-        <activity android:name=".Login" />
-        <activity android:name=".TagRead" />
-        <activity android:name=".WriteTag" />
-        <activity android:name=".SplashScreen" />
+
+        <activity android:name=".SplashScreen">android:exported="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Login"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity android:name=".TagRead"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity android:name=".WriteTag"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity android:name=".Menu"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity android:name=".Registo"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity android:name=".Registo1"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity android:name=".Registo2"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity android:name=".Registo3"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity android:name=".Registo4"
+            android:exported="true"
+            android:screenOrientation="portrait" />
     </application>
 
 </manifest>
