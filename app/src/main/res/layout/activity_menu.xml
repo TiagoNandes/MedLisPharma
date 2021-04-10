@@ -22,7 +22,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/logo" />
+        app:srcCompat="@drawable/medlispharma" />
 
     <ImageButton
         android:id="@+id/tag"
@@ -32,27 +32,11 @@
         android:layout_marginLeft="16dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
-        android:layout_marginBottom="16dp"
         android:background="@drawable/btn_readtag"
-        app:layout_constraintBottom_toTopOf="@+id/medication"
         app:layout_constraintEnd_toStartOf="@+id/profile"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/icon_awesome_tag" />
-
-    <ImageButton
-        android:id="@+id/medication"
-        android:layout_width="0dp"
-        android:layout_height="134dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginBottom="80dp"
-        android:background="@drawable/btn_medication"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/notifications"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/icon_metro_medkit" />
+        app:srcCompat="@drawable/icon_awesome_tag"
+        tools:layout_editor_absoluteY="367dp" />
 
     <ImageButton
         android:id="@+id/profile"
@@ -62,41 +46,11 @@
         android:layout_marginLeft="8dp"
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
-        android:layout_marginBottom="16dp"
         android:background="@drawable/btn_profile"
-        app:layout_constraintBottom_toTopOf="@+id/notifications"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/tag"
-        app:srcCompat="@drawable/icon_awesome_user" />
-
-    <ImageButton
-        android:id="@+id/notifications"
-        android:layout_width="0dp"
-        android:layout_height="134dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginRight="16dp"
-        android:layout_marginBottom="80dp"
-        android:background="@drawable/btn_notifications"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/medication"
-        app:srcCompat="@drawable/icon_material_notifications_active" />
-
-    <TextView
-        android:id="@+id/textView5"
-        android:layout_width="72dp"
-        android:layout_height="19dp"
-        android:gravity="center"
-        android:text="Medicação"
-        android:textColor="#FFFFFF"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/medication"
-        app:layout_constraintEnd_toEndOf="@+id/medication"
-        app:layout_constraintStart_toStartOf="@+id/medication"
-        app:layout_constraintTop_toTopOf="@+id/medication"
-        app:layout_constraintVertical_bias="0.93" />
+        app:srcCompat="@drawable/icon_awesome_user"
+        tools:layout_editor_absoluteY="367dp" />
 
     <TextView
         android:id="@+id/textView7"
@@ -112,21 +66,6 @@
         app:layout_constraintStart_toStartOf="@+id/profile"
         app:layout_constraintTop_toTopOf="@+id/profile"
         app:layout_constraintVertical_bias="0.912" />
-
-    <TextView
-        android:id="@+id/textView6"
-        android:layout_width="85dp"
-        android:layout_height="21dp"
-        android:gravity="center"
-        android:text="Notificações"
-        android:textColor="#FFFFFF"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/notifications"
-        app:layout_constraintEnd_toEndOf="@+id/notifications"
-        app:layout_constraintHorizontal_bias="0.525"
-        app:layout_constraintStart_toStartOf="@+id/notifications"
-        app:layout_constraintTop_toTopOf="@+id/notifications"
-        app:layout_constraintVertical_bias="0.946" />
 
     <TextView
         android:id="@+id/textView4"
