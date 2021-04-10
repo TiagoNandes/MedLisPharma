@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginRight="80dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/InfCaixa"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.18"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/pharma_logo" />
+
+    <Button
+        android:id="@+id/button"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="160dp"
+        android:layout_height="45dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="90dp"
+        android:layout_marginRight="80dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/btn_primaryblue"
+        android:fontFamily="@font/bahnschrift1"
+        android:text="Continuar"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.833" />
+
+    <TextView
+        android:id="@+id/Forma"
+        android:layout_width="60dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="145dp"
+        android:layout_marginLeft="145dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="50dp"
+        android:text="Forma"
+        android:textColor="#03A9F4"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/Caixa1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <View
+        android:id="@+id/Caixa0"
+        android:layout_width="50dp"
+        android:layout_height="4dp"
+        android:background="@drawable/btn_grey"
+        tools:layout_editor_absoluteX="50dp"
+        tools:layout_editor_absoluteY="190dp" />
+
+    <View
+        android:id="@+id/Caixa1"
+        android:layout_width="100dp"
+        android:layout_height="4dp"
+        android:background="@drawable/btn_grey"
+        tools:layout_editor_absoluteX="171dp"
+        tools:layout_editor_absoluteY="190dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginRight="120dp"
+        app:layout_constraintLeft_toLeftOf="@+id/Caixa0"
+        app:layout_constraintLeft_toRightOf="@+id/Caixa2"/>
+
+    <View
+        android:id="@+id/Caixa2"
+        android:layout_width="50dp"
+        android:layout_height="4dp"
+        android:background="@drawable/btn_grey"
+        tools:layout_editor_absoluteX="244dp"
+        tools:layout_editor_absoluteY="190dp"
+        android:layout_marginLeft="120dp"
+        android:layout_marginRight="70dp"
+        app:layout_constraintLeft_toLeftOf="@+id/Caixa1"
+        app:layout_constraintLeft_toRightOf="@+id/Caixa3"/>
+
+    <View
+        android:id="@+id/Caixa3"
+        android:layout_width="50dp"
+        android:layout_height="4dp"
+        android:background="@drawable/btn_grey"
+        tools:layout_editor_absoluteX="311dp"
+        tools:layout_editor_absoluteY="190dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginRight="50dp"
+        app:layout_constraintLeft_toLeftOf="@+id/Caixa2"/>
+
+
+    <TextView
+        android:id="@+id/FormaFarmaceutica"
+        android:layout_width="312dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginBottom="0dp"
+        android:text="Forma Farmacêutica"
+        android:fontFamily="@font/bahnschrift1"
+        android:textColor="#83808080"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/ViaAdministracao"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="1.0" />
+
+
+    <Spinner
+        android:id="@+id/FormaFarmaceutica1"
+        android:layout_width="312dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginBottom="242dp"
+        android:ems="10"
+        android:hint="Forma Farmacêutica"
+        app:layout_constraintBottom_toTopOf="@id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="312dp"
+        android:layout_height="2dp"
+        android:background="@drawable/btn_grey"
+        app:layout_constraintTop_toBottomOf="@+id/FormaFarmaceutica"
+        tools:layout_editor_absoluteX="50dp" />
+
+
+    <TextView
+        android:id="@+id/ViaAdministracao"
+        android:layout_width="312dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginBottom="100dp"
+        android:fontFamily="@font/bahnschrift1"
+        android:text="Via de Administração"
+        android:textColor="#83808080"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/FormaFarmaceutica"
+        app:layout_constraintVertical_bias="1.0" />
+
+
+    <Spinner
+        android:id="@+id/ViaAdministracao1"
+        android:layout_width="312dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginBottom="152dp"
+        android:ems="10"
+        android:hint="Via administração"
+        app:layout_constraintBottom_toTopOf="@id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/FormaFarmaceutica1"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="312dp"
+        android:layout_height="2dp"
+        android:layout_marginTop="0dp"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintTop_toBottomOf="@+id/ViaAdministracao"
+        tools:layout_editor_absoluteX="50dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

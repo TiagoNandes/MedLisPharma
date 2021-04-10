@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/button"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="160dp"
+        android:layout_height="45dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="90dp"
+        android:layout_marginRight="80dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/btn_primaryblue"
+        android:fontFamily="@font/bahnschrift1"
+        android:text="Continuar"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.833" />
+
+    <TextView
+        android:id="@+id/Nome"
+        android:layout_width="312dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="50dp"
+        android:ems="10"
+        android:text="Nome"
+        android:textColor="#83808080"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="209dp" />
+
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="308dp"
+        android:layout_height="2dp"
+        android:background="@android:color/darker_gray"
+        tools:layout_editor_absoluteX="50dp"
+        tools:layout_editor_absoluteY="234dp" />
+
+
+
+    <TextView
+        android:id="@+id/DataValidade"
+        android:layout_width="312dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="50dp"
+        android:ems="10"
+        android:text="Data de Validade"
+        android:textColor="#83808080"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="259dp" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="312dp"
+        android:layout_height="2dp"
+        android:background="@android:color/darker_gray"
+        tools:layout_editor_absoluteX="50dp"
+        tools:layout_editor_absoluteY="284dp" />
+
+    <TextView
+        android:id="@+id/NDoses"
+        android:layout_width="312dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="50dp"
+        android:ellipsize="start"
+        android:ems="10"
+        android:text="Nº de Doses"
+        android:textColor="#83808080"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="309dp" />
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="312dp"
+        android:layout_height="2dp"
+        android:background="@android:color/darker_gray"
+        tools:layout_editor_absoluteX="50dp"
+        tools:layout_editor_absoluteY="333dp" />
+
+    <TextView
+        android:id="@+id/FormaF"
+        android:layout_width="312dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="50dp"
+        android:ellipsize="start"
+        android:ems="10"
+        android:text="Forma Farmacêutica"
+        android:textColor="#83808080"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="359dp" />
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="312dp"
+        android:layout_height="2dp"
+        android:background="@android:color/darker_gray"
+        tools:layout_editor_absoluteX="50dp"
+        tools:layout_editor_absoluteY="382dp" />
+
+    <TextView
+        android:id="@+id/Via"
+        android:layout_width="312dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginBottom="30dp"
+        android:ellipsize="start"
+        android:ems="10"
+        android:text="Via de Administração"
+        android:textColor="#83808080"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/FormaF"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <View
+        android:id="@+id/view4"
+        android:layout_width="312dp"
+        android:layout_height="2dp"
+        android:background="@android:color/darker_gray"
+        tools:layout_editor_absoluteX="50dp"
+        tools:layout_editor_absoluteY="434dp" />
+
+    <TextView
+        android:id="@+id/Freq"
+        android:layout_width="312dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginBottom="30dp"
+        android:ellipsize="start"
+        android:ems="10"
+        android:text="Frequência"
+        android:textColor="#83808080"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Via"
+        app:layout_constraintVertical_bias="0.0" />
+    <View
+        android:id="@+id/view5"
+        android:layout_width="312dp"
+        android:layout_height="2dp"
+        android:background="@android:color/darker_gray"
+        tools:layout_editor_absoluteX="50dp"
+        tools:layout_editor_absoluteY="483dp" />
+
+    <TextView
+        android:id="@+id/FrasedePrecaucao"
+        android:layout_width="312dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="50dp"
+        android:ellipsize="start"
+        android:ems="10"
+        android:text="Frase de Precaução"
+        android:textColor="#83808080"
+        android:textSize="16sp"
+        android:textStyle="bold"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="509dp" />
+    <View
+        android:id="@+id/view5"
+        android:layout_width="312dp"
+        android:layout_height="2dp"
+        android:background="@android:color/darker_gray"
+        tools:layout_editor_absoluteX="50dp"
+        tools:layout_editor_absoluteY="534dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginRight="80dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/Caixa0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.18"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.318"
+        app:srcCompat="@drawable/pharma_logo" />
+
+    <TextView
+        android:id="@+id/FreqV"
+        android:layout_width="80dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="50dp"
+        android:text="Resumo"
+        android:textColor="#03A9F4"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/Caixa3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <View
+        android:id="@+id/Caixa0"
+        android:layout_width="50dp"
+        android:layout_height="4dp"
+        android:background="@drawable/btn_grey"
+        tools:layout_editor_absoluteX="50dp"
+        tools:layout_editor_absoluteY="190dp" />
+
+    <View
+        android:id="@+id/Caixa1"
+        android:layout_width="50dp"
+        android:layout_height="4dp"
+        android:layout_marginLeft="70dp"
+        android:background="@drawable/btn_grey"
+        app:layout_constraintLeft_toLeftOf="@+id/Caixa0"
+        app:layout_constraintLeft_toRightOf="@+id/Caixa2"
+        tools:layout_editor_absoluteY="190dp" />
+
+    <View
+        android:id="@+id/Caixa2"
+        android:layout_width="50dp"
+        android:layout_height="4dp"
+        android:layout_marginLeft="70dp"
+        android:background="@drawable/btn_grey"
+        app:layout_constraintLeft_toLeftOf="@+id/Caixa1"
+        app:layout_constraintLeft_toRightOf="@+id/Caixa3"
+        tools:layout_editor_absoluteY="190dp" />
+
+    <View
+        android:id="@+id/Caixa3"
+        android:layout_width="102dp"
+        android:layout_height="4dp"
+        android:layout_marginLeft="68dp"
+        android:background="@drawable/btn_edit_blue"
+        app:layout_constraintLeft_toLeftOf="@+id/Caixa2"
+        tools:layout_editor_absoluteY="190dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
